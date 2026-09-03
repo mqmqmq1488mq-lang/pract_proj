@@ -1,7 +1,22 @@
 main.main {
-    width: 100%;
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    position: relative;
 }
+
+.wrapper {
+    height: 2000px;
+    background-color: white;
+    .features {
+        .titlefeatures {
+            padding-top: 104px;
+            font-style: Bold;
+            font-weight: 700;
+            text-align: center ;
+        }
+        height: 429px;
+
+    }
+}
+
+
+
+
