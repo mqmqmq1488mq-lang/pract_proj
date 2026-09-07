@@ -1,24 +1,23 @@
-$font-family-base: 'Inter-Regular', sans-serif;
+$font-family-base: 'Montserrat', sans-serif;
+$font-family-h1: 'FredokaOneCyrillic', sans-serif;
 
-$font-weight-thin: 100;          // Thin (Hairline)
-$font-weight-extra-light: 200;   // Extra Light (Ultra Light)
-$font-weight-light: 300;          // Light
-$font-weight-normal: 400;         // Regular (normal)
-$font-weight-medium: 500;         // Medium
-$font-weight-semi-bold: 600;      // Semi Bold (Demi Bold)
-$font-weight-bold: 700;           // Bold
-$font-weight-extra-bold: 800;     // Extra Bold (Ultra Bold)
-$font-weight-black: 900;          // Black (Heavy)
+$font-weight-thin: 100;
+$font-weight-extra-light: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
 
 $font-weight-base: $font-weight-normal;
 
 // COLOR
 $color-background-primary: #FEFEFE;
 $color-background-secondary: #8994a3;
-
-$color-text-primary: #10161f;;
+$color-text-primary: #10161f;
 $color-text-secondary: #1d2633;
-
 $color-svg-icon: #45aef5;
 
 // FONT SIZE

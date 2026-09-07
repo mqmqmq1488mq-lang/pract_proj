@@ -1,3 +1,5 @@
-@include font-face('Inter-Regular', '@/assets/fonts/Inter-Regular/Inter-Regular', $weight: 400, $style: null, $exts: woff2 woff ttf);
-@include font-face('Inter-Medium', '@/assets/fonts/Inter-Medium/Inter-Medium', $weight: 500, $style: null, $exts: woff2 woff ttf);
-@include font-face('Inter-Bold', '@/assets/fonts/Inter-Bold/Inter-Bold', $weight: 700, $style: null, $exts: woff2 woff ttf);
+@include font-face('SchuelerXP', '../assets/fonts/SchuelerXP-Bold/SchuelerXP-Bold.otf', $weight: 700, $style: null, $exts: otf);
+@include font-face('SchuelerXP', '../assets/fonts/SchuelerXP-Regular/SchuelerXP-Regular.otf', $weight: 400, $style: null, $exts: otf);
+@include font-face('Montserrat', '@/assets/fonts/Montserrat-Bold/Montserrat-Bold', $weight: 700, $style: null, $exts: woff2 woff ttf);
+@include font-face('Montserrat', '@/assets/fonts/Montserrat-Regular/Montserrat-Regular', $weight: 400, $style: null, $exts: woff2 woff ttf);
+@include font-face('FredokaOneCyrillic', '@/assets/fonts/FredokaOneCyrillic-Regular/FredokaOneCyrillic-Regular.woff2', $weight: 700, $style: null, $exts: woff2 woff ttf);
