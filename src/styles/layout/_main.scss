@@ -4,9 +4,12 @@ main.main {
 
 .wrapper {
     height: 2000px;
-    background-color: white;
+    background-color: $color-background-primary;
     .features {
         .titlefeatures {
+            font-family: $font-family-h1;
+            font-size: 64px;
+            color: $color-text-secondary;
             padding-top: 104px;
             font-style: Bold;
             font-weight: 700;

@@ -1,10 +1,12 @@
 header.header_background {
     position: relative;
-    background-color: #FFFFFF;
+    background-color: $color-background-primary;
     border-radius: 15px;
 }
 
 nav.header_menu {
+    color: rgb(0, 0, 0);
+    background-color: $color-background-primary;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,6 +14,13 @@ nav.header_menu {
     height: 84px;
 }
 
+a.butnav1 {
+    color: $color-text-secondary;
+    text-decoration: none;
+    font-family: $font-family-base;
+    font-size: 16px;
+    margin-right: 20px;
+}
 a.butnav1:hover {
     opacity: 0.8;
 }
@@ -22,8 +31,8 @@ button.call {
     margin-left: 10px;
     border: none;
     border-radius: 43px;
-    color: #FFFFFF;
-    background-color: #621F2A;
+    color: $color-text-primary;
+    background-color: $color-buttonbackground-primary;
     font-size: 16px;
     font-family: $font-family-base;
     cursor: pointer;
@@ -71,7 +80,7 @@ img.backgroundscreen {
     transform: translateX(-50%);
     width: 662px;
     height: 72px;
-    background-color: #621F2A;
+    background-color: $color-buttonbackground-primary;
     border-radius: 20px;
     z-index: 20;
     display: flex;
@@ -85,7 +94,7 @@ img.backgroundscreen {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: white;
+    color: $color-text-primary;
     text-decoration: none;
     font-family: $font-family-base;
     font-size: 15px;
