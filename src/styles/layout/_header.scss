@@ -1,7 +1,11 @@
 header.header_background {
-    position: relative;
+    padding: 0;
     background-color: $color-background-primary;
     border-radius: 15px;
+}
+
+.hero {
+    position: relative;
 }
 
 nav.header_menu {
