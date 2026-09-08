@@ -14,15 +14,15 @@ nav.header_menu {
     height: 84px;
 }
 
-a.butnav1 {
+a.header_butnav1 {
     color: $color-text-secondary;
     text-decoration: none;
     font-family: $font-family-base;
     font-size: 16px;
     margin-right: 20px;
 }
-a.butnav1:hover {
-    opacity: 0.8;
+a.header_butnav1:hover {
+    opacity: 0.6;
 }
 
 button.call {
@@ -42,14 +42,17 @@ button.call:hover {
     opacity: 0.8;
 }
 
-img.backgroundscreen {
+div.backgroundscreen {
     width: 100%;
     height: 753px;
-    object-fit: cover;
     display: block;
+    background-image: url('/src/assets/imagess/background_screen.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.maintext-wrapper {
+.maintext_wrapper {
     position: absolute;
     top: 50%;
     left: 280px;
@@ -73,7 +76,7 @@ img.backgroundscreen {
     font-family: $font-family-base;
 }
 
-.contacts-group {
+.contacts_group {
     position: absolute;
     bottom: -40px;
     left: 50%;
@@ -90,7 +93,7 @@ img.backgroundscreen {
     box-sizing: border-box;
 }
 
-.contact-btn {
+.contact_btn {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -104,6 +107,6 @@ img.backgroundscreen {
     cursor: pointer;
 }
 
-.contact-btn:hover {
+.contact_btn:hover {
     opacity: 0.8;
 }
