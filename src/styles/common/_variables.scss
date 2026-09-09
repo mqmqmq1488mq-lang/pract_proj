@@ -1,6 +1,5 @@
 $font-family-base: 'Montserrat', sans-serif;
-$font-family-h1: 'Posterama Text Bold', sans-serif;
-
+$font-family-h1: 'Jost', sans-serif; // Posterama Text в общем доступе есть только в виде Bold, SemiBold не поддерживает кириллицу, поэтому для заголовков использую Jost, который поддерживает кириллицу и имеет похожий стиль
 $font-weight-thin: 100;
 $font-weight-extra-light: 200;
 $font-weight-light: 300;
@@ -26,12 +25,12 @@ $color-footer-background: #373E46;
 $line-height-base: 1.5;
 $font-size-base: 14px;
 
-$h1: $font-size-base * 3;
-$h2: $font-size-base * 2;
-$h3: $font-size-base * 1.5;
-$h4: $font-size-base * 1.3;
-$h5: $font-size-base * 1.2;
-$h6: $font-size-base * 1.1;
+$h1: 110px;
+$h2: 64px;
+$h3: 24px;
+$h4: 20px;
+$h5: 18px;
+$h6: 16px;
 
 
 // SCREENS SIZES

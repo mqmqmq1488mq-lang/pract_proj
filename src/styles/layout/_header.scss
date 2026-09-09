@@ -1,4 +1,4 @@
-header.header_background {
+header.header__background {
     padding: 0;
     padding-top: 84px;
     background-color: $color-background-primary;
@@ -6,7 +6,7 @@ header.header_background {
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
 }
 
-.header_menu {
+.header__menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -22,14 +22,15 @@ header.header_background {
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
 }
 
-a.header_butnav1 {
+a.header__butnav1 {
+    font-weight: 500;
     color: $color-text-secondary;
     text-decoration: none;
     font-family: $font-family-base;
     font-size: 16px;
     margin-right: 20px;
 }
-a.header_butnav1:hover {
+a.header__butnav1:hover {
     opacity: 0.6;
 }
 

@@ -1,0 +1,78 @@
+.hero {
+    position: relative;
+}
+
+.hero__background {
+    width: 100%;
+    min-height: 753px;
+    display: block;
+    background-image: url('/src/assets/imagess/background_screen.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 -12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.hero__content {
+    position: absolute;
+    top: 50%;
+    left: 280px;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.hero__title {
+    color: $color-text-primary;
+    font-size: $h1;
+    font-weight: 600;
+    line-height: 1.1;
+    font-family: $font-family-h1;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero__subtitle {
+    color: $color-text-primary;
+    font-size: $h3;
+    font-weight: 600;
+    margin-top: 20px;
+    font-family: $font-family-h1;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero__contacts {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 662px;
+    height: 72px;
+    background-color: $color-buttonbackground-primary;
+    border-radius: 20px;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.hero__contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: $color-text-primary;
+    text-decoration: none;
+    font-family: $font-family-base;
+    font-size: 15px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero__contact:hover {
+    opacity: 0.8;
+}
