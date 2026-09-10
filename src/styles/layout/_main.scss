@@ -1,0 +1,26 @@
+main.main {
+    position: relative;
+    width: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+}
+
+.features {
+    .titlefeatures {
+        font-family: $font-family-h1;
+        font-size: $h2;
+        color: $color-text-secondary;
+        padding-top: 104px;
+        font-style: Bold;
+        font-weight: $font-weight-bold; 
+        text-align: center ;
+        text-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+    min-height: 600px;
+}
+
+
+
+

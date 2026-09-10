@@ -1,0 +1,6 @@
+@include font-face('Montserrat', '@/assets/fonts/Montserrat-Bold/Montserrat-Bold', $weight: 700, $style: null, $exts: woff2 woff ttf);
+@include font-face('Montserrat', '@/assets/fonts/Montserrat-Regular/Montserrat-Regular', $weight: 400, $style: null, $exts: woff2 woff ttf);
+@include font-face('Montserrat', '@/assets/fonts/Montserrat-Medium/Montserrat-Medium', $weight: 500, $style: null, $exts: woff2 woff ttf);
+// @include font-face('Posterama Text', '@/assets/fonts/Posterama-Text-Bold/Posterama Text Bold', $weight: 700, $style: null, $exts: woff2 woff ttf);
+@include font-face('Jost', '@/assets/fonts/Jost-Bold/Jost-Bold', $weight: 700, $style: null, $exts: woff2 woff ttf);
+@include font-face('Jost', '@/assets/fonts/Jost-Semibold/Jost-SemiBold', $weight: 600, $style: null, $exts: woff2 woff ttf);
