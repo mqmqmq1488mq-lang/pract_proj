@@ -1,7 +1,26 @@
 main.main {
+    position: relative;
     width: 100%;
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 }
+
+.wrapper {
+    min-height: 100%;
+}
+
+.features {
+    .titlefeatures {
+        font-family: $font-family-h;
+        font-size: $h2;
+        color: $color-text-secondary;
+        padding-top: 104px;
+        font-style: $font-style-normal;
+        font-weight: $font-weight-bold; 
+        text-align: center ;
+        text-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+    min-height: 600px;
+}
+
+
+
+
