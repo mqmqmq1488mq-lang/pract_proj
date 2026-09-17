@@ -1,36 +1,45 @@
-$font-family-base: 'Inter-Regular', sans-serif;
-
-$font-weight-thin: 100;          // Thin (Hairline)
-$font-weight-extra-light: 200;   // Extra Light (Ultra Light)
-$font-weight-light: 300;          // Light
-$font-weight-normal: 400;         // Regular (normal)
-$font-weight-medium: 500;         // Medium
-$font-weight-semi-bold: 600;      // Semi Bold (Demi Bold)
-$font-weight-bold: 700;           // Bold
-$font-weight-extra-bold: 800;     // Extra Bold (Ultra Bold)
-$font-weight-black: 900;          // Black (Heavy)
+$font-family-base: 'Montserrat', sans-serif;
+$font-family-h: 'Jost', sans-serif; // Posterama Text в общем доступе есть только в виде Bold, SemiBold не поддерживает кириллицу, поэтому для заголовков использую Jost, который поддерживает кириллицу и имеет похожий стиль
+$font-weight-thin: 100;
+$font-weight-extra-light: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
 
 $font-weight-base: $font-weight-normal;
+$font-style-normal: normal;
+
+$font-size-navigation: 16px;
+$font-size-button: 16px;
+$font-size-contact: 15px;
+$font-size-contact-mobile: 11px;
+$font-size-hero-title-mobile: 48px;
+$line-height-html: 1.15;
+$line-height-heading: 1.1;
 
 // COLOR
-$color-background-primary: #FEFEFE;
+$color-buttonbackground-primary: #621F2A;
+$color-background-primary: #ffffff;
 $color-background-secondary: #8994a3;
-
-$color-text-primary: #10161f;;
-$color-text-secondary: #1d2633;
-
+$color-text-primary: #ffffff;
+$color-text-secondary: #000000;
 $color-svg-icon: #45aef5;
+$color-footer-background: #373E46;
 
 // FONT SIZE
 $line-height-base: 1.5;
 $font-size-base: 14px;
 
-$h1: $font-size-base * 3;
-$h2: $font-size-base * 2;
-$h3: $font-size-base * 1.5;
-$h4: $font-size-base * 1.3;
-$h5: $font-size-base * 1.2;
-$h6: $font-size-base * 1.1;
+$h1: 110px;
+$h2: 64px;
+$h3: 24px;
+$h4: 20px;
+$h5: 18px;
+$h6: 16px;
 
 
 // SCREENS SIZES
