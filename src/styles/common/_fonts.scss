@@ -3,3 +3,5 @@
 @include font-face('Montserrat', '@/assets/fonts/Montserrat-SemiBold/Montserrat-SemiBold', $weight: 600, $style: null, $exts: woff2 woff ttf);
 @include font-face('Montserrat', '@/assets/fonts/Montserrat-Bold/Montserrat-Bold', $weight: 700, $style: null, $exts: woff2 woff ttf);
 // @include font-face('Posterama Text', '@/assets/fonts/Posterama-Text-Bold/Posterama Text Bold', $weight: 700, $style: null, $exts: woff2 woff ttf);
+@include font-face('Jost', '@/assets/fonts/Jost-Bold/Jost-Bold', $weight: 700, $style: null, $exts: woff2 woff ttf);
+@include font-face('Jost', '@/assets/fonts/Jost-SemiBold/Jost-SemiBold', $weight: 600, $style: null, $exts: woff2 woff ttf);
