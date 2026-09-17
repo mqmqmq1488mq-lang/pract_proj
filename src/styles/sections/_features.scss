@@ -1,0 +1,101 @@
+.features {
+    font-family: $font-family-base;
+    min-height: 600px;
+
+    > .container {
+        min-height: 600px;
+        overflow: hidden;
+    }
+
+    .wrapper {
+        min-height: 100%;
+    }
+
+    .titlefeatures {
+        font-family: $font-family-h;
+        font-size: $h2;
+        color: $color-text-secondary;
+        padding-top: 104px;
+        font-style: $font-style-normal;
+        font-weight: $font-weight-bold;
+        text-align: center;
+        text-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    &__watermark {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        box-sizing: border-box;
+        margin: -2px 0 0;
+        overflow: hidden;
+        color: rgba(83, 91, 99, 0.1);
+        font-family: $font-family-h;
+        font-size: clamp(110px, 12vw, 200px);
+        font-weight: $font-weight-bold;
+        line-height: 0.9;
+        white-space: nowrap;
+    }
+
+    &__panel {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        box-sizing: border-box;
+        height: 225px;
+        padding: 32px 60px;
+        border-radius: 20px;
+        background-color: #FBFBFB;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__icon {
+        display: block;
+        flex: 0 0 32px;
+        width: 32px;
+        height: 32px;
+        margin-bottom: 12px;
+    }
+
+    &__title {
+        margin: 0 0 8px;
+        color: #3f4852;
+        font-family: $font-family-h;
+        font-size: $h6;
+        font-weight: $font-weight-bold;
+        line-height: 1.3;
+    }
+
+    &__description {
+        max-width: 235px;
+        margin: 0;
+        color: #a0a0a0;
+        font-family: $font-family-base;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 767px) {
+    .features {
+        &__watermark {
+            font-size: 15vw;
+        }
+
+        &__panel {
+            height: auto;
+            gap: 28px;
+            padding: 24px;
+            flex-direction: column;
+        }
+    }
+}
