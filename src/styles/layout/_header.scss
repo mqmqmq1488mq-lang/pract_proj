@@ -8,7 +8,7 @@
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
 }
 
-.header .container {
+.header__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,6 +19,51 @@
 .header__menu {
     display: flex;
     align-items: center;
+
+    a.header__menu-link {
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+}
+
+.header__toggle {
+    display: none;
+    position: relative;
+    align-items: center;
+    gap: 12px;
+    min-height: 40px;
+    padding: 0 0 0 34px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+
+    span {
+        position: absolute;
+        left: 0;
+        width: 22px;
+        height: 2px;
+        background-color: $color-text-secondary;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+
+        &:nth-child(1) {
+            top: 13px;
+        }
+
+        &:nth-child(2) {
+            top: 19px;
+        }
+
+        &:nth-child(3) {
+            top: 25px;
+        }
+    }
+
+    strong {
+        display: block;
+        font: 500 $font-size-navigation $font-family-base;
+        color: $color-text-secondary;
+    }
 }
 
 a.header__menu-link {
@@ -28,10 +73,6 @@ a.header__menu-link {
     font-family: $font-family-base;
     font-size: $font-size-navigation;
     transition: opacity 0.2s ease;
-
-    &:not(:last-child) {
-        margin-right: 20px;
-    }
 }
 
 a.header__menu-link:hover {
@@ -58,4 +99,165 @@ button.call {
 
 button.call:hover {
     opacity: 0.7;
+}
+
+.header__socials {
+    display: none;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.header__social {
+    display: block;
+    height: 52px;
+    filter: drop-shadow(0 2px 4px rgba(98, 31, 42, 0.15));
+    transition: opacity 0.2s ease;
+
+    &:hover {
+        opacity: 0.75;
+    }
+
+    > svg:not(.header__social-icon-set) {
+        display: none;
+    }
+}
+
+.header__social-icon-set {
+    display: block;
+    width: 52px;
+    height: 52px;
+}
+
+.header__social-icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+    --header-social-icon-tablet-display: inline;
+    --header-social-icon-mobile-display: none;
+}
+
+@include max-w($tablet) {
+    .header__inner {
+        justify-content: flex-start;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .header__toggle {
+        display: flex;
+    }
+
+    .header__menu {
+        position: absolute;
+        top: 100%;
+        left: 15px;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 20px;
+        background-color: $color-background-primary;
+
+        &.is-open {
+            display: flex;
+        }
+
+        a.header__menu-link {
+            padding: 7px 0;
+        }
+    }
+
+    .header__number {
+        margin-left: auto;
+    }
+
+    button.call {
+        padding: 11px 20px;
+    }
+
+    .header__socials {
+        display: flex;
+        gap: 8px;
+    }
+}
+
+@include max-w($mobile_md) {
+    .header__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .header__toggle {
+        display: flex;
+        min-height: 40px;s
+
+        span {
+            width: 22px;
+            left: 9px;
+            height: 2px;
+            background-color: $color-text-secondary;
+
+            &:nth-child(1) {
+                top: 13px;
+            }
+
+            &:nth-child(2) {
+                top: 19px;
+            }
+
+            &:nth-child(3) {
+                top: 25px;
+            }
+        }
+
+        strong {
+            display: none;
+        }
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__number {
+        a.header__menu-link {
+            white-space: nowrap;
+        }
+    }
+
+    .header__socials {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        margin-left: 0;
+        gap: 8px;
+    }
+
+    .header__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        .header__social-icon-set {
+            display: block;
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .header__social-icon {
+        --header-social-icon-tablet-display: none;
+        --header-social-icon-mobile-display: inline;
+    }
+
+    button.call {
+        display: none;
+    }
 }
