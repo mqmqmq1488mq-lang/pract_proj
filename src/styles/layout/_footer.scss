@@ -1,26 +1,264 @@
 footer.footer {
-    .footer__content{
+    background-color: $color-footer-background;
+    font-family: $font-family-base;
+    font-weight: $font-weight-normal;
+    padding: 40px 0;
+
+    a {
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .footer__left {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
+        font-weight: $font-weight-normal;
     }
 
-    hr {
-        border-bottom-color: $color-background-secondary;
-        width: 100%;
-        flex-grow: 1;
+    .footer__section-title {
+        color: $color-text-primary;
+        font-size: 16px;
+        font-weight: $font-weight-semi-bold;
+        line-height: 20px;
     }
 
-    .footer__link {
+    .footer__navigation-links {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-grow: 0;
+        justify-content: space-between;
+        gap: 12px;
+        margin-top: 10px;
+
+        li a {
+            color: $color-text-primary;
+            font-size: 16px;
+            font-weight: $font-weight-normal;
+            line-height: 20px;
+        }
     }
 
-    .footer__inc--gray {
-        color: $color-text-secondary;
+    .footer__stores {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 18px;
+    }
+
+    .footer__addresses {
+        gap: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__address {
+        display: flex;
+        gap: 12px;
+        flex-basis: calc((100% - 40px) / 3);
+        color: $color-text-primary;
+
+        svg {
+            flex: 0 0 18px;
+            width: 18px;
+            height: 18px;
+            margin-top: 1px;
+        }
+
+        span {
+            font-size: 16px;
+            font-weight: $font-weight-normal;
+            line-height: 140%;
+        }
+    }
+
+    .footer__right {
+        display: flex;
+        flex-direction: column;
+        width: 270px;
+    }
+
+    .footer__phone {
+        align-self: center;
+        color: $color-text-primary;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .footer__call {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 270px;
+        margin-top: 20px;
+        padding: 12px 32px;
+        border: 0;
+        border-radius: 43px;
+        color: $color-text-primary;
+        background-color: $color-buttonbackground-primary;
+        font-family: $font-family-base;
+        font-size: $font-size-button;
+        font-weight: $font-weight-medium;
+        line-height: 20px;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    .footer__socials {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .footer__social {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: $color-text-primary;
+        font-size: 16px;
+        font-weight: $font-weight-medium;
+        line-height: 20px;
+
+        svg {
+            display: block;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .footer__policies {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        margin-top: 32px;
+
+        a {
+            color: $color-background-secondary;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
+
+@include max-w($laptop_md) {
+    footer.footer {
+        .footer__container {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 250px;
+            grid-template-areas:
+                "navigation contact"
+                "stores stores";
+            column-gap: 28px;
+            row-gap: 32px;
+            padding-right: 5.2%;
+            padding-left: 5.2%;
+        }
+
+        .footer__left {
+            display: contents;
+        }
+
+        .footer__nav-section {
+            grid-area: navigation;
+        }
+
+        .footer__navigation-links {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 6px;
+            margin-top: 12px;
+
+            li a {
+                font-size: 14px;
+            }
+        }
+
+        .footer__stores {
+            grid-area: stores;
+            gap: 14px;
+            margin-top: 0;
+            padding-top: 32px;
+            border-top: 1px solid rgba($color-text-primary, 0.35);
+        }
+
+        .footer__addresses {
+            gap: 16px;
+        }
+
+        .footer__address {
+            flex: 1 1 0;
+
+            span {
+                font-size: 14px;
+                line-height: 1.35;
+            }
+        }
+
+        .footer__right {
+            grid-area: contact;
+            width: 100%;
+        }
+
+        .footer__phone {
+            font-size: 14px;
+        }
+
+        .footer__call {
+            width: 100%;
+            margin-top: 16px;
+            padding: 12px 24px;
+        }
+
+        .footer__socials,
+        .footer__policies {
+            margin-top: 16px;
+        }
+
+        .footer__social {
+            font-size: 14px;
+        }
+
+        .footer__policies a {
+            line-height: 21px;
+        }
+    }
+}
+
+@include max-w($mobile_md) {
+    footer.footer {
+        padding: 32px 0 28px;
+
+        .footer__container {
+            grid-template-columns: minmax(0, 1fr);
+            grid-template-areas:
+                "navigation"
+                "contact"
+                "stores";
+            row-gap: 28px;
+        }
+
+        .footer__right {
+            max-width: 320px;
+        }
+
+        .footer__stores {
+            padding-top: 24px;
+        }
+
+        .footer__addresses {
+            flex-direction: column;
+            gap: 16px;
+        }
     }
 }
