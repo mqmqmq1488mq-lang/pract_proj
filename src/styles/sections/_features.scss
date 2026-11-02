@@ -1,0 +1,247 @@
+.features {
+    font-family: $font-family-base;
+    min-height: 278px;
+
+    > .container {
+        min-height: 278px;
+        overflow: hidden;
+    }
+
+    .wrapper {
+        position: relative;
+        min-height: 278px;
+    }
+
+    .titlefeatures {
+        font-family: $font-family-h;
+        font-size: $h2;
+        color: #373E46;
+        padding-top: 20px;
+        font-weight: $font-weight-bold;
+        line-height: 1.1;
+        text-align: center;
+        text-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    &__watermark {
+        display: none;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        margin: -2px 0 0;
+        overflow: hidden;
+        color: rgba(83, 91, 99, 0.1);
+        font-family: $font-family-h;
+        font-size: clamp(110px, 9vw, 170px);
+        font-weight: $font-weight-bold;
+        line-height: 0.9;
+        white-space: nowrap;
+    }
+
+    &__panel {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 188px;
+        padding: 32px 60px;
+        border-radius: 20px;
+        background-color: #FBFBFB;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__icon {
+        display: block;
+        flex: 0 0 32px;
+        width: 32px;
+        height: 32px;
+        margin-bottom: 12px;
+    }
+
+    &__title {
+        margin: 0 0 8px;
+        color: #3f4852;
+        font-family: $font-family-h;
+        font-size: $h6;
+        font-weight: $font-weight-bold;
+        line-height: 1.3;
+    }
+
+    &__description {
+        max-width: 235px;
+        margin: 0;
+        color: #a0a0a0;
+        font-family: $font-family-base;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+@include min-w($laptop_lg) {
+    .features {
+        min-height: 429px;
+
+        > .container,
+        .wrapper {
+            min-height: 429px;
+        }
+
+        &__watermark {
+            display: flex;
+        }
+    }
+}
+
+@include max-w($laptop_lg) {
+    .features {
+        min-height: 615px;
+
+        > .container,
+        .wrapper {
+            min-height: 615px;
+        }
+
+        .titlefeatures {
+            padding-top: 68px;
+        }
+
+        &__watermark {
+            display: flex;
+        }
+
+        &__panel {
+            width: 90%;
+            height: 284px;
+            margin: 0 auto;
+            padding: 32px 40px;
+            gap: 24px;
+        }
+    }
+
+    .feature-card {
+        flex: 1 1 0;
+        min-width: 0;
+
+        &__icon {
+            flex-basis: 36px;
+            width: 36px;
+            height: 36px;
+            margin-bottom: 16px;
+        }
+
+        &__title {
+            font-size: 18px;
+        }
+
+        &__description {
+            max-width: none;
+            font-size: 18px;
+        }
+    }
+}
+
+@include max-w($tablet) {
+    .features {
+        min-height: auto;
+
+        > .container,
+        .wrapper {
+            min-height: auto;
+        }
+
+        .titlefeatures {
+            padding-top: 8px;
+            font-size: 30px;
+        }
+
+        &__watermark {
+            display: none;
+        }
+
+        &__panel {
+            width: 100%;
+            height: auto;
+            margin: 48px auto 0;
+            padding: 0 24px;
+            gap: 16px;
+            background: transparent;
+            box-shadow: none;
+        }
+    }
+
+    .feature-card {
+        flex: 1 1 0;
+        min-width: 0;
+        min-height: 186px;
+        padding: 18px 17px;
+        border-radius: 12px;
+        background-color: #FBFBFB;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        &__icon {
+            flex-basis: 28px;
+            width: 28px;
+            height: 28px;
+            margin-bottom: 12px;
+        }
+
+        &__title {
+            font-size: 14px;
+            line-height: 1.25;
+        }
+
+        &__description {
+            max-width: none;
+            font-size: 13px;
+            line-height: 1.2;
+        }
+    }
+}
+
+@include max-w($mobile_md) {
+    .features {
+        .titlefeatures {
+            font-size: 18px;
+        }
+
+        &__panel {
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 0 10px;
+        }
+    }
+
+    .feature-card {
+        min-height: 110px;
+        padding: 12px;
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+
+        &__icon {
+            flex-basis: 20px;
+            width: 20px;
+            height: 20px;
+            margin-bottom: 10px;
+        }
+
+        &__title {
+            margin-bottom: 6px;
+            font-size: 12px;
+            line-height: 1.2;
+        }
+
+        &__description {
+            font-size: 10px;
+            line-height: 1.2;
+        }
+    }
+}
